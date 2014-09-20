@@ -1,0 +1,126 @@
+@import "reset.less";
+@import "base.less";
+@import "grid.less";
+@import "fonts.less";
+@import "mixins.less";
+//@import "note.less";
+@import "ventas.less";
+
+@grayTop: #dcdcdc;
+@grayBottom: #cbcbcb;
+@borderBottom: #b4b4b4;
+
+@font-color1: #fff;
+@font-color2: #39424b;
+
+@font-1: 'Arial', sans-serif;
+//@font-2: 'Abril Fatface', cursive;
+
+
+body, html{
+    font-family: @font-1;
+}
+
+//.overflow{
+//    overflow: hidden;
+//}
+
+.footerTop{
+    background-color: @grayTop;
+    .contFootTop{
+        border: solid 1px @grayTop;
+        strong{
+            font-size: 16px;
+        }
+        ul{
+            li{
+                border-bottom: solid 1px @borderBottom;
+                padding: 5px 0;
+                a{
+                    color: @font-color2;
+                    font-size: 12px;
+                }
+            }
+        }
+        a{
+            color: @font-color2;
+        }
+    }
+}
+
+.footerBottom{
+    background-color: @grayBottom;
+    .contFootBot{
+        border: solid 1px @grayBottom;
+        .divLogo{
+            margin-top: 20px;
+            border-bottom: solid 1px @borderBottom;
+            padding-bottom: 10px;
+        }
+        .divSocial{
+            margin-top: 20px;
+            padding-top: 2px;
+            strong{
+                font-size: 16px;
+            }
+            ul{
+                display: block;
+                overflow: hidden;
+                li {
+                    float: left;
+                    width: 100px;
+                    margin-right: 5px;
+                    div{
+                        border-radius: 50px;
+                        width: 45px;
+                        height: 45px;
+                        text-align: center;
+                        font-size: 30px;
+                        padding-top: 3px;
+                        float: left;
+                        margin-right: 15px;
+                        i{
+                            color: @font-color1;
+                        }
+                    }
+                    p{
+                        color: @font-color2;
+                        font-size: 16px;
+                    }
+                    .feis{
+                        background-color: #1a4e95;
+                    }
+                    .tuit{
+                        background-color: #35aadc;
+                    }
+                    .gooPlus{
+                        background-color: #dc4a38;
+                    }
+                    .you{
+                        background-color: #ec2828;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 990px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 610px) {
+
+}
+
+@media (max-width: 500px) {
+
+}
