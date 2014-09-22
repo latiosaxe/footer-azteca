@@ -41,7 +41,7 @@ body, html{
                     color: @font-color2;
                     font-size: 12px;
                     border-bottom: solid 1px @borderBottomW;
-                    padding: 13px 0 11px;
+                    padding: 8px 0 5px;
                 }
             }
         }
@@ -84,13 +84,15 @@ body, html{
                 font-size: 16px;
             }
             ul{
+                width: 100%;
                 display: block;
                 overflow: hidden;
                 li {
                     float: left;
-                    width: auto;
+//                    width: auto;
                     display: inline-block;
-                    margin-right: 40px;
+                    width: 25%;
+//                    margin-right: 40px;
                     a{
                         display: inline-block;
                     }
@@ -185,6 +187,11 @@ body, html{
                 overflow: hidden;
                 display: block;
                 .transition(all 500ms);
+                li{
+                    a{
+                        padding: 13px 0 11px;
+                    }
+                }
                 &.expanded{
                     max-height: 300px;
                     display: block;
@@ -220,7 +227,7 @@ body, html{
             .divSocial{
                 ul{
                     li{
-                        margin-right: 49px;
+//                        margin-right: 49px;
                     }
                 }
             }
@@ -231,19 +238,17 @@ body, html{
 
 @media (max-width: 500px) {
 
-//    .footerBottom{
-//        .contFootBot{
-//            .divSocial{
-//                ul{
-//                    li{
-//                        margin-right: 32px;
-//                        &:last-of-type{
-//                            margin-top: 10px;
-//                        }
-//                    }
-//                }
-//            }
-//        }
-//    }
+    .footerBottom{
+        .contFootBot{
+            .divSocial{
+                ul{
+                    li{
+                        margin-bottom: 20px;
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
 
 }
