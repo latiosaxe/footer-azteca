@@ -9,6 +9,7 @@
 @grayTop: #dcdcdc;
 @grayBottom: #cbcbcb;
 @borderBottom: #b4b4b4;
+@borderBottomW: #e6e6e6;
 
 @font-color1: #fff;
 @font-color2: #39424b;
@@ -35,10 +36,12 @@ body, html{
         ul{
             li{
                 border-bottom: solid 1px @borderBottom;
-                padding: 5px 0;
+//                padding: 5px 0;
                 a{
                     color: @font-color2;
                     font-size: 12px;
+                    border-bottom: solid 1px @borderBottomW;
+                    padding: 8px 0 5px;
                 }
             }
         }
@@ -68,6 +71,10 @@ body, html{
         .divLogo{
             margin-top: 20px;
             border-bottom: solid 1px @borderBottom;
+            padding-bottom: 1px;
+        }
+        .divLogoIn{
+            border-bottom: solid 1px @borderBottomW;
             padding-bottom: 10px;
         }
         .divSocial{
@@ -81,8 +88,12 @@ body, html{
                 overflow: hidden;
                 li {
                     float: left;
-                    width: 100px;
-                    margin-right: 5px;
+                    width: auto;
+                    display: inline-block;
+                    margin-right: 40px;
+                    a{
+                        display: inline-block;
+                    }
                     div{
                         border-radius: 50px;
                         width: 45px;
@@ -91,7 +102,7 @@ body, html{
                         font-size: 30px;
                         padding-top: 3px;
                         float: left;
-                        margin-right: 15px;
+//                        margin-right: 15px;
                         i{
                             color: @font-color1;
                         }
@@ -99,6 +110,8 @@ body, html{
                     p{
                         color: @font-color2;
                         font-size: 16px;
+                        display: inline-block;
+                        margin-left: 5px;
                     }
                     .feis{
                         background-color: #1a4e95;
@@ -120,9 +133,35 @@ body, html{
 
 @media (max-width: 1200px) {
 
+    .footerBottom{
+        .contFootBot{
+            .divSocial{
+                ul{
+                    li{
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 @media (max-width: 990px) {
+
+    .footerBottom{
+        .contFootBot{
+            .divSocial{
+                ul{
+                    li{
+                        &:last-of-type{
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 }
 
@@ -136,6 +175,7 @@ body, html{
             a{
                 i{
                     display: inline;
+                    float: right;
                 }
             }
         }
@@ -148,19 +188,62 @@ body, html{
                 &.expanded{
                     max-height: 300px;
                     display: block;
-                    background-color: rgba(0,0,0,0.2);
+                    background-color: rgba(220,220,220,0.6);
                     margin-top: 12px;
                     margin-left: 12px;
                 }
             }
         }
     }
+
+    .footerBottom{
+        .contFootBot{
+            .divSocial{
+                ul{
+                    li{
+                        margin-right: 50px;
+                        &:last-of-type{
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 @media (max-width: 610px) {
 
+    .footerBottom{
+        .contFootBot{
+            .divSocial{
+                ul{
+                    li{
+                        margin-right: 49px;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 @media (max-width: 500px) {
+
+    .footerBottom{
+        .contFootBot{
+            .divSocial{
+                ul{
+                    li{
+                        margin-right: 32px;
+                        &:last-of-type{
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 
 }
