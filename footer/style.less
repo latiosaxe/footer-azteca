@@ -18,13 +18,39 @@
 //@font-2: 'Abril Fatface', cursive;
 
 
-body, html{
+body,html{
+    margin: 0;
+}
+#footer{
     font-family: @font-1;
+    *{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    *:before,
+    *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
 }
 
-//.overflow{
-//    overflow: hidden;
-//}
+.overflow{
+    overflow: hidden;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
 
 .footerTop{
     padding-top: 20px;
